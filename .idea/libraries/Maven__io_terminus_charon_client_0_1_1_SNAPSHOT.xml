@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.terminus:charon-client:0.1.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/charon-client/0.1.1-SNAPSHOT/charon-client-0.1.1-20200424.083330-5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/maven/repo/io/terminus/charon-client/0.1.1-SNAPSHOT/charon-client-0.1.1-20200424.083330-5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/charon-client/0.1.1-SNAPSHOT/charon-client-0.1.1-20200424.083330-5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

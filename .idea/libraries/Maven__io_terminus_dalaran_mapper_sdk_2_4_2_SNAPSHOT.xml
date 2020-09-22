@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.terminus:dalaran-mapper-sdk:2.4.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/dalaran-mapper-sdk/2.4.2-SNAPSHOT/dalaran-mapper-sdk-2.4.2-20200624.065057-25.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/maven/repo/io/terminus/dalaran-mapper-sdk/2.4.2-SNAPSHOT/dalaran-mapper-sdk-2.4.2-20200624.065057-25-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/dalaran-mapper-sdk/2.4.2-SNAPSHOT/dalaran-mapper-sdk-2.4.2-20200624.065057-25-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

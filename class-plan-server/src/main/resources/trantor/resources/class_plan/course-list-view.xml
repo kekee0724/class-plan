@@ -1,0 +1,24 @@
+<View title="课程信息">
+    <Table key="table" model="class_plan_Course">
+        <Search>
+            <Fields>
+                <Field name="cid" label="课程编号"/>
+                <Field name="cname" label="课程名称"/>
+            </Fields>
+        </Search>
+        <RecordActions label="操作">
+            <Action label="详情" action="class_plan_Course_toDetail"/>
+            <Action label="编辑" action="class_plan_Course_toEdit"/>
+            <Action label="删除" after="Refresh" confirm="确定要删除?" action="class_plan_Course_delete"/>
+        </RecordActions>
+        <Fields>
+            <Field name="cid" label="课程编号"/>
+            <Field name="cname" label="课程名称"/>
+        </Fields>
+        <Actions>
+<!--            <Action label="创建" openViewType="Self" action="class_plan_Course_toEdit" />-->
+            <Action label="创建" openViewType="Dialog" action="class_plan_Course_toEdit" />
+            <Action label="自定义创建" openViewType="Self" action="class_plan_Course_toCreate" />
+        </Actions>
+    </Table>
+</View>

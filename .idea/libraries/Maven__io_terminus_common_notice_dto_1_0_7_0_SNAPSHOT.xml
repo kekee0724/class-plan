@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.terminus.common:notice-dto:1.0.7.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/common/notice-dto/1.0.7.0-SNAPSHOT/notice-dto-1.0.7.0-20200319.072100-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/maven/repo/io/terminus/common/notice-dto/1.0.7.0-SNAPSHOT/notice-dto-1.0.7.0-20200319.072100-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/common/notice-dto/1.0.7.0-SNAPSHOT/notice-dto-1.0.7.0-20200319.072100-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

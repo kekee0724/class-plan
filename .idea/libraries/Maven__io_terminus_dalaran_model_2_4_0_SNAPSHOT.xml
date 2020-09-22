@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.terminus:dalaran-model:2.4.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/dalaran-model/2.4.0-SNAPSHOT/dalaran-model-2.4.0-20200624.063627-15.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/maven/repo/io/terminus/dalaran-model/2.4.0-SNAPSHOT/dalaran-model-2.4.0-20200624.063627-15-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/dalaran-model/2.4.0-SNAPSHOT/dalaran-model-2.4.0-20200624.063627-15-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

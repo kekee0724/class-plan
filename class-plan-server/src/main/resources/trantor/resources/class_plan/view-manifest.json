@@ -1,0 +1,56 @@
+[
+  {
+    "key": "List",
+    "name": "教师列表",
+    "type": "List",
+    "forModel": "class_plan_Teacher",
+    "template": "teacher-list-view.xml",
+    "isDefault": true
+  },
+  {
+    "key": "Form",
+    "name": "教师表单",
+    "type": "Form",
+    "forModel": "class_plan_Teacher",
+    "template": "teacher-form-view.xml",
+    "isDefault": true
+  },
+  {
+    "key": "Detail",
+    "name": "教师详情",
+    "type": "Detail",
+    "forModel": "class_plan_Teacher",
+    "template": "teacher-detail-view.xml",
+    "isDefault": true
+  },
+  {
+    "key": "FilterAdmin",
+    "name": "自定义的过滤 admin 教师后的教师列表视图",
+    "type": "List",
+    "forModel": "class_plan_Teacher",
+    "template": "teacher-filter-admin-list-view.xml"
+  },{
+  "key": "List",
+  "name": "课程列表",
+  "type": "List",
+  "forModel": "class_plan_Course",
+  "template": "course-list-view.xml",
+  "isDefault": true
+},
+  {
+    "key": "Form",
+    "name": "课程表单",
+    "type": "Form",
+    "forModel": "class_plan_Course",
+    "template": "course-form-view.xml",
+    "isDefault": true
+  },
+  {
+    "key": "Detail",
+    "name": "课程详情",
+    "type": "Detail",
+    "forModel": "class_plan_Course",
+    "template": "course-detail-view.xml",
+    "isDefault": true
+  }
+]

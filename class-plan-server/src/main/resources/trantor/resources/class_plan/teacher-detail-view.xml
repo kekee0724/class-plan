@@ -1,0 +1,22 @@
+<View title="教师详情" subtitle="">
+    <Detail key="teacher" model="class_plan_Teacher">
+        <Fields>
+            <Field name="tid" label="教师工号"/>
+            <Field name="tname" label="教师名"/>
+        </Fields>
+    </Detail>
+    <!-- related：所有 class_plan_Course 模型的 teacher 属性对应 key=course -->
+    <Table title="课程信息" model="class_plan_Course" related="teacher:teacher">
+        <Fields>
+            <Field name="cid" label="课程编号"/>
+            <Field name="cname" label="课程名称"/>
+        </Fields>
+    </Table>
+    <!-- related：所有 class_plan_Course 模型的 teacher 属性对应 key=teacher "{field:'teacher:teacher', condition: 'age > 20'}"-->
+<!--    <Table title="课程信息" model="class_plan_Course" related="{field:'teacher:teacher'}">-->
+<!--        <Fields>-->
+<!--            <Field name="cid" label="课程编号"/>-->
+<!--            <Field name="cname" label="课程名称"/>-->
+<!--        </Fields>-->
+<!--    </Table>-->
+</View>

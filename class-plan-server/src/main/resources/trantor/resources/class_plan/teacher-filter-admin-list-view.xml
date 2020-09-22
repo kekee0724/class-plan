@@ -1,0 +1,8 @@
+<View title="过滤admin后的教师列表">
+    <Table key="table" model="class_plan_Teacher">
+        <Fields>
+            <Field name="tid" label="教师工号"/>
+            <Field name="tname" label="教师名"/>
+        </Fields>
+    </Table>
+</View>

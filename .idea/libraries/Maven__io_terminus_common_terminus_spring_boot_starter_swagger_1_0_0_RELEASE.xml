@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.terminus.common:terminus-spring-boot-starter-swagger:1.0.0.RELEASE">
+    <CLASSES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/common/terminus-spring-boot-starter-swagger/1.0.0.RELEASE/terminus-spring-boot-starter-swagger-1.0.0.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/maven/repo/io/terminus/common/terminus-spring-boot-starter-swagger/1.0.0.RELEASE/terminus-spring-boot-starter-swagger-1.0.0.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/common/terminus-spring-boot-starter-swagger/1.0.0.RELEASE/terminus-spring-boot-starter-swagger-1.0.0.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

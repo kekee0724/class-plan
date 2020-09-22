@@ -1,0 +1,36 @@
+<View title="教师信息">
+    <Table key="table" model="class_plan_Teacher">
+        <Search>
+            <Fields>
+                <Field name="tid" label="教师工号"/>
+                <Field name="tname" label="教师名"/>
+            </Fields>
+        </Search>
+        <RecordActions label="操作">
+            <Action label="详情" action="class_plan_Teacher_toDetail"/>
+            <Action label="编辑" action="class_plan_Teacher_toEdit"/>
+            <Action label="删除" after="Refresh" confirm="确定要删除?" action="class_plan_Teacher_delete"/>
+        </RecordActions>
+        <Fields>
+            <Field name="tid" label="教师工号"/>
+            <Field name="tname" label="教师名"/>
+        </Fields>
+        <Actions>
+            <Action label="创建" openViewType="Dialog" action="class_plan_Teacher_toEdit" />
+
+            <!-- 触发跳转至自定义 view action，跳转时传数据过滤参数, 见: teacher-custom-actions.json -->
+            <Action label="过滤 admin" action="class_plan_Teacher_FilterAdmin"
+                :context="{
+                modelKey: 'class_plan_Teacher',
+                record: {tname: this.searchData.name}
+                }"/>
+
+            <!-- 自定义 server action, 批量修改名字，具体见: TeacherServerAction.java -->
+            <Action label="批量修改名字" after="Refresh" action="class_plan_Teacher_TeacherServerAction::batchUpdateName"
+                    :context="{
+                modelKey: 'class_plan_Teacher',
+                record: {tname: 'demo@terminus.io', id: [0, 1]}
+                }"/>
+        </Actions>
+    </Table>
+</View>

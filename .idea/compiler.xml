@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="class-plan-api" />
+        <module name="class-plan-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="class-plan" target="1.8" />
+      <module name="class-plan-api" target="1.8" />
+      <module name="class-plan-server" target="8" />
+      <module name="demo-api" target="1.8" />
+      <module name="demo-server" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

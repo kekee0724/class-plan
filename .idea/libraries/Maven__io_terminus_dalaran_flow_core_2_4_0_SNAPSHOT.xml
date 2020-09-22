@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.terminus:dalaran-flow-core:2.4.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/dalaran-flow-core/2.4.0-SNAPSHOT/dalaran-flow-core-2.4.0-20200624.063753-17.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/maven/repo/io/terminus/dalaran-flow-core/2.4.0-SNAPSHOT/dalaran-flow-core-2.4.0-20200624.063753-17-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/dalaran-flow-core/2.4.0-SNAPSHOT/dalaran-flow-core-2.4.0-20200624.063753-17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,3 @@
+# Project exclude paths
+/class-plan-api/target/
+/class-plan-server/target/

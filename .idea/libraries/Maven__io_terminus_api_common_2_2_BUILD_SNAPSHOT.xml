@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.terminus:api-common:2.2.BUILD-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/api-common/2.2.BUILD-SNAPSHOT/api-common-2.2.BUILD-20190526.073107-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/maven/repo/io/terminus/api-common/2.2.BUILD-SNAPSHOT/api-common-2.2.BUILD-20190526.073107-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/api-common/2.2.BUILD-SNAPSHOT/api-common-2.2.BUILD-20190526.073107-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

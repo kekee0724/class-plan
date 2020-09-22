@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.terminus.platform:datastore-graphql:4.1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/platform/datastore-graphql/4.1.0-SNAPSHOT/datastore-graphql-4.1.0-20200629.124148-15.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/maven/repo/io/terminus/platform/datastore-graphql/4.1.0-SNAPSHOT/datastore-graphql-4.1.0-20200629.124148-15-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/maven/repo/io/terminus/platform/datastore-graphql/4.1.0-SNAPSHOT/datastore-graphql-4.1.0-20200629.124148-15-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+[{
+  "key": "toCreate", // action key, 模块内唯一
+  "forModel": "class_plan_Course", // 所属模型全局 key, 组成方式: <moduleKey>_<modelKey>
+  "extra": {
+    "dataSource": "Action", // 待跳转目标视图数据来源类型，可选 DataStore | Static | Action | Empty
+    "actionKey": "class_plan_Course_CourseToCreateDataAction",
+    "target": "class_plan_Course_Form", // 跳转的目标视图，与 targetType 二选一， 在 view-manifest.json 里查找时去除 moduleKey 前缀
+    "processorActionKey": "class_plan_Course_CourseToCreateProcessor",
+    "openViewType": "Self" // 打开视图的方式，默认为 Self ，其余可选项为 Blank | Dialog | Drawer | Columns
+  }
+}]
