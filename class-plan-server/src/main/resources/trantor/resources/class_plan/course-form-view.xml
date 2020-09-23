@@ -1,10 +1,14 @@
 <View title="编辑课程">
-    <!--    <Record key="course" model="class_plan_Course" />-->
+    <Record key="teacher" model="class_plan_Teacher"/>
     <Form key="course" model="class_plan_Course">
         <Fields>
             <Field name="cid" label="课程编号"/>
             <Field name="cname" label="课程名称"/>
-            <Field name="teacher" :show="false" :submit="true"/>
+            <Field name="teacher" label="教师信息查看+可新增">
+                <RenderType>
+                    <ModelSelect modalTitle="教师信息查看模态窗" :createAction="true"/>
+                </RenderType>
+            </Field>
         </Fields>
         <Actions>
             <Action label="新增" layout="Footer" :show="!this.data.id" type="Submit" action="class_plan_Course_create"
@@ -15,32 +19,4 @@
                     action="class_plan_Course_CourseServerAction::create" after="GoBack"/>
         </Actions>
     </Form>
-
-    <Record key="teacher" model="class_plan_Teacher"/>
-    <Form title="查看教师信息" model="class_plan_Course"  lookupFrom="teacher.course">
-        <Fields>
-            <!-- 模态窗标题、配置 ModelSelect控件的 新增 操作对应的 ViewAction -->
-            <Field name="teacher" label="教师信息查看+可新增">
-                <RenderType>
-                    <ModelSelect modalTitle="教师信息查看模态窗" :createAction="true"/>
-                </RenderType>
-            </Field>
-        </Fields>
-    </Form>
-
-    <!-- lookUpFrom 属性可以将某个表单的值用作另外一个表单的字段提交，在多个 Form 一起提交的场景非常有用。 -->
-    <TableForm title="编辑教师信息" model="class_plan_Teacher" lookupFrom="course.teacher">
-        <Fields>
-            <Field name="tid" label="教师工号"/>
-            <Field name="tname" label="教师名"/>
-        </Fields>
-    </TableForm>
-    <!-- 也可做单纯的关联 -->
-<!--        <Table title="教师信息" model="class_plan_Teacher" lookupFrom="course.teacher">-->
-<!--            <Fields>-->
-<!--                <Field name="tid" label="教师工号"/>-->
-<!--                <Field name="tname" label="教师名"/>-->
-<!--            </Fields>-->
-<!--        </Table>-->
-
 </View>

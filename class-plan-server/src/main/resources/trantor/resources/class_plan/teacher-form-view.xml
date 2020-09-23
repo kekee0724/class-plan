@@ -1,9 +1,14 @@
 <View title="编辑教师">
-
+    <Record key="course" model="class_plan_Course"/>
     <Form key="teacher" model="class_plan_Teacher">
         <Fields>
             <Field name="tid" label="教师工号"/>
             <Field name="tname" label="教师名"/>
+            <Field name="course" label="课程信息查看+可新增">
+                <RenderType>
+                    <ModelSelect modalTitle="课程信息查看模态窗" :createAction="true"/>
+                </RenderType>
+            </Field>
             <Field name="course" :show="false" :submit="true"/>
         </Fields>
         <Actions>
@@ -12,30 +17,22 @@
         </Actions>
     </Form>
 
-    <Record key="course" model="class_plan_Course"/>
-    <Form title="查看课程信息" model="class_plan_Teacher" lookupFrom="course.teacher">
-        <Fields>
-            <!-- 自定义选项的展示文本 -->
-<!--            <Field name="course" label="condition筛选">-->
-<!--                <RenderType>-->
-<!--                    <ModelSelect condition="cid=='C01'"/>-->
-<!--                </RenderType>-->
-<!--            </Field>-->
-            <!-- 模态窗标题、配置 ModelSelect控件的 新增 操作对应的 ViewAction -->
-            <Field name="course" label="课程信息查看+可新增">
-                <RenderType>
-                    <ModelSelect modalTitle="课程信息查看模态窗" :createAction="true"/>
-                </RenderType>
-            </Field>
-<!--            <Field name="course" label="修改展示文案">-->
-<!--                <RenderType>-->
-<!--                    <ModelSelect :showPanel="false"/>-->
-<!--                </RenderType>-->
-<!--            </Field>-->
-        </Fields>
-    </Form>
-
-
+    <!--    <Form title="查看课程信息" model="class_plan_Teacher" lookupFrom="course.teacher">-->
+    <!--        <Fields>-->
+    <!--            &lt;!&ndash;             自定义选项的展示文本 &ndash;&gt;-->
+    <!--            <Field name="course" label="condition筛选">-->
+    <!--                <RenderType>-->
+    <!--                    <ModelSelect condition="cid=='C01'"/>-->
+    <!--                </RenderType>-->
+    <!--            </Field>-->
+    <!--            &lt;!&ndash;             模态窗标题、配置 ModelSelect控件的 新增 操作对应的 ViewAction&ndash;&gt;-->
+    <!--            <Field name="course" label="修改展示文案">-->
+    <!--                <RenderType>-->
+    <!--                    <ModelSelect :showPanel="false"/>-->
+    <!--                </RenderType>-->
+    <!--            </Field>-->
+    <!--        </Fields>-->
+    <!--    </Form>-->
 
 
     <!-- lookUpFrom 属性可以将某个表单的值用作另外一个表单的字段提交，在多个 Form 一起提交的场景非常有用。 -->

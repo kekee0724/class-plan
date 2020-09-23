@@ -1,9 +1,15 @@
 <View title="课程信息">
+    <Record key="teacher" model="class_plan_Teacher"/>
     <Table key="table" model="class_plan_Course">
         <Search>
             <Fields>
                 <Field name="cid" label="课程编号"/>
                 <Field name="cname" label="课程名称"/>
+                <Field name="teacher" label="教师信息查看+可新增">
+                    <RenderType>
+                        <ModelSelect modalTitle="教师信息查看模态窗" :createAction="true"/>
+                    </RenderType>
+                </Field>
             </Fields>
         </Search>
         <RecordActions label="操作">
