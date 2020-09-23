@@ -15,6 +15,7 @@ public class CourseToCreateDataAction implements SingleDataAction<Course> {
     @Autowired
     private CourseRepository courseRepository;
 
+    @Override
     public SingleDataResult<Course> load(SingleDataParams singleDataParams) {
         System.out.println("Brt-视图数据获取-0001");
 //        Optional<Course> course = this.courseRepository.findById(1L);

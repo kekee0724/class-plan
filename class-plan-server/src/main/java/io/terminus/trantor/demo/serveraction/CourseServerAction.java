@@ -29,7 +29,9 @@ public class CourseServerAction {
     @DSTransaction
     public ActionBusinessMessage create(Course course) {
         System.out.println("Brt-自定义新增处理-0005");
+        System.out.println("Brt-course.getCid=" + course.getCid());
         System.out.println("Brt-course.getCname=" + course.getCname());
+        System.out.println("Brt-course.getTeacher=" + course.getTeacher());
         User user = TContext.getCurrentUser();
         System.out.println("Brt-currentUser.id=" + user.getId());
         //TODO

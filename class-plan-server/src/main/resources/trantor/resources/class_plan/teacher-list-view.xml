@@ -29,7 +29,7 @@
             <Action label="批量修改名字" after="Refresh" action="class_plan_Teacher_TeacherServerAction::batchUpdateName"
                     :context="{
                 modelKey: 'class_plan_Teacher',
-                record: {tname: 'demo@terminus.io', id: [0, 1]}
+                record: {tname: 'demo@terminus.io', id: [5, 6]}
                 }"/>
         </Actions>
     </Table>

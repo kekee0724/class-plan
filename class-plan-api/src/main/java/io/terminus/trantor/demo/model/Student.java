@@ -8,14 +8,16 @@ import lombok.Data;
 
 import java.util.Date;
 
-//        建立student表
-//        属性有:编号：id (主键，自动增长),姓名:sname,出生年月:sage,性别:ssex(枚举)
-//        create table student(sid int primary key auto_increment,
-//        sname varchar(20),
-//        sage date,
-//        ssex enum(‘男’,’女’));
+/**
+ * 建立student表
+ * 属性有:编号：id (主键，自动增长),姓名:sname,出生年月:sage,性别:ssex(枚举)
+ * create table student(sid int primary key auto_increment,
+ * sname varchar(20),
+ * sage date,
+ * ssex enum(‘男’,’女’));
+ */
 @Data
-@TModel(name = "学生信息", mainField="sid")
+@TModel(name = "学生信息", mainField = "sid")
 public class Student extends BaseModel<Long> {
     private static final long serialVersionUID = 1L;
 
@@ -30,7 +32,4 @@ public class Student extends BaseModel<Long> {
 
     @TModelField(name = "性别类型")
     private SexType sexType;
-
-
-
 }

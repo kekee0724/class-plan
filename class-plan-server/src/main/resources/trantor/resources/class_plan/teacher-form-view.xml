@@ -1,6 +1,6 @@
 <View title="编辑教师">
-    <Record key="teacher" model="class_plan_Teacher" />
-    <Form model="class_plan_Teacher">
+
+    <Form key="teacher" model="class_plan_Teacher">
         <Fields>
             <Field name="tid" label="教师工号"/>
             <Field name="tname" label="教师名"/>
@@ -11,28 +11,45 @@
             <Action type="Submit" :show="!!this.data.id" action="class_plan_Teacher_update" after="GoBack"/>
         </Actions>
     </Form>
-<!--    <Form model="class_plan_Course">-->
-<!--        <Fields>-->
-<!--            &lt;!&ndash; 模态窗标题、配置 ModelSelect控件的 新增 操作对应的 ViewAction &ndash;&gt;-->
-<!--            <Field name="course" label="标题+可新增">-->
+
+    <Record key="course" model="class_plan_Course"/>
+    <Form title="查看课程信息" model="class_plan_Teacher" lookupFrom="course.teacher">
+        <Fields>
+            <!-- 自定义选项的展示文本 -->
+<!--            <Field name="course" label="condition筛选">-->
 <!--                <RenderType>-->
-<!--                    <ModelSelect modalTitle="自定义模态窗标题" :createAction="true"/>-->
+<!--                    <ModelSelect condition="cid=='C01'"/>-->
 <!--                </RenderType>-->
 <!--            </Field>-->
-<!--        </Fields>-->
-<!--    </Form>-->
+            <!-- 模态窗标题、配置 ModelSelect控件的 新增 操作对应的 ViewAction -->
+            <Field name="course" label="课程信息查看+可新增">
+                <RenderType>
+                    <ModelSelect modalTitle="课程信息查看模态窗" :createAction="true"/>
+                </RenderType>
+            </Field>
+<!--            <Field name="course" label="修改展示文案">-->
+<!--                <RenderType>-->
+<!--                    <ModelSelect :showPanel="false"/>-->
+<!--                </RenderType>-->
+<!--            </Field>-->
+        </Fields>
+    </Form>
+
+
+
+
     <!-- lookUpFrom 属性可以将某个表单的值用作另外一个表单的字段提交，在多个 Form 一起提交的场景非常有用。 -->
-    <TableForm title="课程信息" model="class_plan_Course" lookupFrom="teacher.course">
+    <TableForm title="编辑课程信息" model="class_plan_Course" lookupFrom="teacher.course">
         <Fields>
             <Field name="cid" label="课程编号"/>
             <Field name="cname" label="课程名称"/>
         </Fields>
     </TableForm>
-<!--     也可做单纯的关联-->
-<!--    <Table title="课程信息" model="class_plan_Course" lookupFrom="teacher.course">-->
-<!--        <Fields>-->
-<!--            <Field name="cid" label="课程编号"/>-->
-<!--            <Field name="cname" label="课程名称"/>-->
-<!--        </Fields>-->
-<!--    </Table>-->
+    <!--     也可做单纯的关联-->
+    <!--    <Table title="课程信息" model="class_plan_Course" lookupFrom="teacher.course">-->
+    <!--        <Fields>-->
+    <!--            <Field name="cid" label="课程编号"/>-->
+    <!--            <Field name="cname" label="课程名称"/>-->
+    <!--        </Fields>-->
+    <!--    </Table>-->
 </View>

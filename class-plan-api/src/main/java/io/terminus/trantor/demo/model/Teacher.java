@@ -8,11 +8,13 @@ import lombok.Data;
 
 import java.util.List;
 
-//        教师表
-//        create table teacher(tid int primary key auto_increment,
-//        tname varchar(20));
+/**
+ * 教师表
+ * create table teacher(tid int primary key auto_increment,
+ * tname varchar(20));
+ */
 @Data
-@TModel(name = "教师信息", mainField="tid")
+@TModel(name = "教师信息", mainField = "tid")
 public class Teacher extends BaseModel<Long> {
     private static final long serialVersionUID = 1L;
 

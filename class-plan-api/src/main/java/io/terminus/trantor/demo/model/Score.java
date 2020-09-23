@@ -8,10 +8,10 @@ import io.terminus.trantor.api.annotation.typemeta.RelationMeta;
 import lombok.Data;
 
 /**
-        建立成绩表
-        create table sc(sid int,
-        cid int,
-        score int);
+ * 建立成绩表
+ * create table sc(sid int,
+ * cid int,
+ * score int);
  */
 @Data
 @TModel(name = "成绩信息", mainField = "sid")

@@ -14,6 +14,7 @@ import java.util.List;
 @Component
 public class CourseToCreateProcessor implements DataProcessorAction<Course, Course> {
 
+    @Override
     public @NotNull Collection process(Collection<Course> data) {
         System.out.println("Brt-视图数据处理-0003");
 /*
@@ -22,7 +23,8 @@ public class CourseToCreateProcessor implements DataProcessorAction<Course, Cour
         }*/
 
         Course course = new Course();
-        course.setCid("C01");
+        course.setCid("CC01");
+        course.setCname("CCCC");
         List<Course> list = new ArrayList<>(1);
         list.add(course);
         return list;
